@@ -60,6 +60,7 @@ export default {
     flex-direction: column;
     width: 90%;
     margin: auto;
+    position:relative;
   }
   .close-img {
     display: flex;
@@ -76,12 +77,12 @@ export default {
   }
   .mini-navbar {
     color: #181818;
-    position: absolute;
-    margin: auto;
+    position: fixed;
+    margin:  auto;
     width: 100%;
     text-align: center;
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(4px);
+    /* background: rgba(255, 255, 255, 0.4); */
+    backdrop-filter: blur(6px);
     display: grid;
     height: 100vh;
     gap: 8px;
