@@ -15,8 +15,6 @@ import Header from "../components/Header.vue";
   .home-wrapper {
     background: #f6f6f6;
     color: #141414;
-    display: grid;
-    gap: 24%;
     margin: auto;
     align-items: center;
     justify-content: center;

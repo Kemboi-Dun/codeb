@@ -15,16 +15,13 @@
 /* small screens */
 @media only screen and (max-width: 768px) and (min-width: 320px) {
   .header-wrapper {
-    margin: 2% 4%;
-    width: 100%;
-    display: grid;
+    margin: 8% auto;
+    width: 90%;
   }
   .header-info {
     text-transform: capitalize;
     font-size: 560%;
-
-    width: 90%;
-    line-height: 120px;
+    width: 100%;
     font-weight: 600;
   }
   .header-desc {
