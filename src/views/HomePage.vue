@@ -13,13 +13,11 @@ import Header from "../components/Header.vue";
 <style scoped>
 @media only screen and (max-width: 768px) and (min-width: 320px) {
   .home-wrapper {
-    background: #f6f6f6;
     color: #141414;
     margin: auto;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height:97vh;
   }
 }
 @media only screen and (max-width: 2560px) and (min-width: 768px) {
