@@ -21,7 +21,7 @@ import Header from "../components/Header.vue";
     justify-content: center;
     width: 100%;
     background:  var(--background-color-primary);
-
+    overflow-y: hidden;
   }
 }
 @media only screen and (max-width: 2560px) and (min-width: 768px) {

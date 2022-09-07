@@ -16,6 +16,7 @@ import Contact from '../components/Contact.vue';
         .contact-page-wrapper{
           background:  var(--background-color-primary);
           color: var(--text-primary-color);
+          overflow-y: hidden;
         }
         
         </style>
