@@ -39,7 +39,7 @@ header {
 .app-body-wrapper{
     background:  var(--background-color-primary);
   color: var(--text-primary-color);
-height:100vh;
+
   }
 </style>
 
