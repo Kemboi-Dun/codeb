@@ -19,6 +19,7 @@ import Header from "../components/Header.vue";
     align-items: center;
     justify-content: center;
     width: 100%;
+    height:97vh;
   }
 }
 @media only screen and (max-width: 2560px) and (min-width: 768px) {
