@@ -55,7 +55,10 @@ export default {
           <RouterLink to="/contact" exact-active-class="active"
             >Contact</RouterLink
           >
-          <Toogle/>
+          <div class="toogle-icon">
+            <Toogle/>
+          </div>
+        
         </div>
       </nav>
     </div>
@@ -166,6 +169,13 @@ export default {
 }
 
 @media only screen and (max-width: 2560px) and (min-width: 768px) {
+
+  .toogle-icon{
+    top:15%;
+    /* background: lime; */
+    left:92%;
+    position: fixed;
+  }
   .wrapper {
     width: 100%;
     margin: auto;

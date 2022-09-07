@@ -4,7 +4,7 @@
 
 <template>
   <div class="footer-wrapper">
-    <div class="info-1">© 2023 BY CodeBuffers.</div>
+    <div class="info-1">© 2022 BY CodeBuffers.</div>
     <div class="info-2">Privacy and Policy</div>
   </div>
 </template>

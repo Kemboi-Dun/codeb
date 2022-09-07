@@ -2,12 +2,22 @@
   <div class="home-wrapper">
     <NavbarVue />
     <Header />
+    <AboutHeader/>
+    <About/>
+    <Work/>
+    <Contact/>
+    <Footer/>
   </div>
 </template>
 
 <script setup>
 import NavbarVue from "../components/Navbar.vue";
 import Header from "../components/Header.vue";
+import AboutHeader from "../components/AboutHeader.vue";
+import About from "../components/About.vue";
+import Work from "../components/Work.vue";
+import Contact from "../components/Contact.vue";
+import Footer from "../components/Footer.vue";
 </script>
 
 <style scoped>

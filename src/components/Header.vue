@@ -31,6 +31,7 @@
     display: flex;
   }
   .header-desc img {
+    color:#fff;
     height: 90px;
   }
 }
@@ -41,7 +42,7 @@
   .header-wrapper {
     color: var(--text-primary-color);
     width: 60%;
-    margin: 0 12%;
+    margin: 0 5%;
     text-transform: uppercase;
     
   }
