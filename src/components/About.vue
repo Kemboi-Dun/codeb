@@ -78,7 +78,7 @@ const information = [
   }
   .about-desc-btn button {
     color: var(--text-primary-color);
-    border: 1px solid #181818;
+    border: 1px solid var(--text-primary-color);
     border-radius: 6px;
     background: transparent;
     font-size: 20px;

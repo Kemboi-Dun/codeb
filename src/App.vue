@@ -3,10 +3,14 @@ import { RouterView } from "vue-router";
 </script>
 
 <template>
-  <RouterView />
+  <div class="app-body-wrapper">
+    <RouterView />
+  </div>
+ 
 </template>
 
 <style>
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 header {
   font-family: 'Poppins', sans-serif;
@@ -32,6 +36,11 @@ header {
   --text-primary-color: #181818;
   --text-secondary-color: #f8f8f8;
 }
+.app-body-wrapper{
+    background:  var(--background-color-primary);
+  color: var(--text-primary-color);
+  height: 100vh;
+  }
 </style>
 
 
