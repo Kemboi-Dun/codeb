@@ -33,59 +33,113 @@ const projects = [
 </template>
 
 <style scoped>
-.work-body-wrapper {
-  color: #181818;
-  margin: auto;
+/* small screens */
+@media only screen and (max-width: 768px) and (min-width: 320px) {
+  .work-title {
+    font-size: 250%;
+    font-weight: 700;
+    text-decoration: underline 6px solid #181818;
+    text-underline-offset: 10px;
+    margin: 0 5%;
+  }
+  .work-cont {
+    margin: 0 5%;
+    display: grid;
+    gap: 12px;
+    width: 90%;
+  }
+  .work-info {
+    display: flex;
+    flex-direction: column;
+    margin: 2% auto;
+  }
+  .work-info-title {
+    font-size: 200%;
+    font-weight: 200;
+    line-height: 76px;
+  }
+  .work-info-desc {
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 30px;
+    display: grid;
+    gap: 6px;
+    width: 70%;
+    margin: auto;
+  }
+  .work-info-btn button {
+    font-size: 20px;
+    font-weight: 275;
+    line-height: 30px;
+    border: 1px solid #181818;
+    border-radius: 6px;
+    background: transparent;
+    text-transform: capitalize;
+    padding: 4px 12px;
+    cursor: pointer;
+  }
+  .work-info-btn button:hover {
+    background: #181818;
+    color: #f6f6f6;
+  }
 }
-.work-title {
-  font-size: 120px;
-  font-weight: 700;
-  line-height: 180px;
-  text-decoration: underline 12px solid #181818;
-  text-underline-offset: 10px;
-  margin: 0 5%;
-}
-.work-cont {
-  margin: 0 5%;
-  display: grid;
-  gap: 12px;
-  width: 90%;
-  /* background: lime; */
-}
-.work-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 2% auto;
-}
-.work-info-title {
-  font-size: 64px;
-  font-weight: 200;
-  line-height: 96px;
-  width: 40%;
-}
-.work-info-desc {
-  font-weight: 200;
-  font-size: 20px;
-  line-height: 30px;
-  display: grid;
-  gap: 6px;
-  width: 70%;
-  margin: auto;
-}
-.work-info-btn button {
-  font-size: 20px;
-  font-weight: 275;
-  line-height: 30px;
-  border: 1px solid #181818;
-  border-radius: 6px;
-  background: transparent;
-  text-transform: capitalize;
-  padding: 4px 12px;
-  cursor: pointer;
-}
-.work-info-btn button:hover {
-  background: #181818;
-  color: #f6f6f6;
+
+/* large screens */
+
+@media only screen and (max-width: 2560px) and (min-width: 768px) {
+  .work-body-wrapper {
+    color: #181818;
+    margin: auto;
+  }
+  .work-title {
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 180px;
+    text-decoration: underline 12px solid #181818;
+    text-underline-offset: 10px;
+    margin: 0 5%;
+  }
+  .work-cont {
+    margin: 0 5%;
+    display: grid;
+    gap: 12px;
+    width: 90%;
+  }
+  .work-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% auto;
+  }
+  .work-info-title {
+    font-size: 64px;
+    font-weight: 200;
+    line-height: 96px;
+    width: 40%;
+  }
+  .work-info-desc {
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 30px;
+    display: grid;
+    gap: 6px;
+    width: 70%;
+    margin: auto;
+  }
+  .work-info-btn button {
+    font-size: 20px;
+    font-weight: 275;
+    line-height: 30px;
+    border: 1px solid #181818;
+    border-radius: 6px;
+    background: transparent;
+    text-transform: capitalize;
+    padding: 4px 12px;
+    cursor: pointer;
+  }
+  .work-info-btn button:hover {
+    background: #181818;
+    color: #f6f6f6;
+  }
 }
 </style>

@@ -43,9 +43,7 @@ export default {
         <!-- LARGE SCREENS NAVBAR -->
         <div class="nav-2">
           <RouterLink to="/about" exact-active-class="active">About</RouterLink>
-          <RouterLink to="/work" exact-active-class="active"
-            >Work</RouterLink
-          >
+          <RouterLink to="/work" exact-active-class="active">Work</RouterLink>
           <RouterLink to="/contact" exact-active-class="active"
             >Contact</RouterLink
           >
@@ -66,7 +64,7 @@ export default {
   .close-img {
     display: flex;
     justify-content: end;
-    align-content:flex-end;
+    align-content: flex-end;
     height: 42px;
     margin: 0 12px;
     margin-top: 28px;
@@ -77,8 +75,8 @@ export default {
     cursor: pointer;
   }
   .mini-navbar {
-    color:#181818;
-    position: absolute;
+    color: #181818;
+
     margin: auto;
     width: 100%;
     text-align: center;
@@ -87,7 +85,6 @@ export default {
     display: grid;
     height: 100vh;
     gap: 8px;
-    /* display: none; */
   }
 
   nav .nav-2,
@@ -109,16 +106,10 @@ export default {
     cursor: pointer;
   }
 
-  footer {
-    margin: auto;
-    color: red;
-  }
-
   .wrapper {
     width: 100%;
-    margin: 1% auto;
+    margin: 3% auto;
     background: transparent;
-    position: fixed;
   }
   nav {
     display: flex;
@@ -154,11 +145,10 @@ export default {
     font-weight: 600;
     font-size: 18px;
   }
-  nav  .router-link-active {
+  nav .router-link-active {
     color: #181818;
     text-decoration: underline 4px solid #181818;
     text-underline-offset: 5px;
-    
   }
 }
 
@@ -167,7 +157,6 @@ export default {
     width: 100%;
     margin: auto;
     background: transparent;
-    /* position: fixed; */
   }
   .mini-navbar {
     display: none;
@@ -179,13 +168,11 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
   }
   a {
     color: #141414;
     text-decoration: none;
     margin: 4% 4px;
-
   }
   .nav-1 a {
     color: #141414;
@@ -193,8 +180,8 @@ export default {
     font-size: 64px;
     line-height: 96px;
   }
-  .nav-2 a{
-    border:1px solid #141414;
+  .nav-2 a {
+    border: 1px solid #141414;
     border-radius: 6px;
     font-weight: 500;
     font-size: 32px;
@@ -221,7 +208,7 @@ export default {
 
   nav .nav-2 .router-link-active {
     color: #f2f2f2;
-    background:#161616;
+    background: #161616;
   }
 }
 </style>

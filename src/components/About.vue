@@ -34,59 +34,121 @@ const information = [
   </div>
 </template>
 <style scoped>
-.about-body-wrapper {
-  margin: 4% auto;
-  display: flex;
-  width: 90%;
-  justify-content: space-evenly;
-}
-.title-wrapper {
-  font-weight: lighter;
-  font-size: 58px;
-}
-.about-wrapper-cont {
-  display: grid;
-  gap: 12px;
+/* small screens */
+@media only screen and (max-width: 768px) and (min-width: 320px) {
+  .about-body-wrapper {
+    margin: 4% auto;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: space-evenly;
+  }
+  .title-wrapper {
+    font-weight: lighter;
+    font-size: 38px;
+  }
+  .about-wrapper-cont {
+    display: grid;
+    gap: 12px;
 
-  margin: auto;
-  margin: auto;
-  margin-top: 6%;
-}
-.about-info-cont {
-  padding: 6px 12px;
+    margin: auto;
+    margin: auto;
+    margin-top: 6%;
+  }
+  .about-info-cont {
+    padding: 6px 12px;
 
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  align-content: flex-end;
-  margin: auto;
-}
-.about-info-cont-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
-  text-transform: capitalize;
-}
-.about-info-cont-desc {
-  font-weight: 280;
-  font-size: 20px;
-  line-height: 30px;
-
-  width: 800px;
-}
-.about-desc-btn button {
-  border: 1px solid #181818;
-  border-radius: 6px;
-  background: transparent;
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 280;
-  padding: 4px 8px;
-  text-transform: capitalize;
-  cursor: pointer;
-}
-.about-desc-btn button:hover {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-content: flex-end;
+    margin: auto;
+  }
+  .about-info-cont-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: capitalize;
+  }
+  .about-info-cont-desc {
+    font-weight: 280;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .about-desc-btn button {
+    border: 1px solid #181818;
+    border-radius: 6px;
+    background: transparent;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 280;
+    padding: 4px 8px;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+  .about-desc-btn button:hover {
     background: #181818;
-    color:#f2f2f2;
+    color: #f2f2f2;
+  }
+}
+
+/* large screens */
+
+@media only screen and (max-width: 2560px) and (min-width: 768px) {
+  .about-body-wrapper {
+    margin: 4% auto;
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+  }
+  .title-wrapper {
+    font-weight: lighter;
+    font-size: 58px;
+  }
+  .about-wrapper-cont {
+    display: grid;
+    gap: 12px;
+
+    margin: auto;
+    margin: auto;
+    margin-top: 6%;
+  }
+  .about-info-cont {
+    padding: 6px 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-content: flex-end;
+    margin: auto;
+  }
+  .about-info-cont-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: capitalize;
+  }
+  .about-info-cont-desc {
+    font-weight: 280;
+    font-size: 20px;
+    line-height: 30px;
+
+    width: 800px;
+  }
+  .about-desc-btn button {
+    border: 1px solid #181818;
+    border-radius: 6px;
+    background: transparent;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 280;
+    padding: 4px 8px;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+  .about-desc-btn button:hover {
+    background: #181818;
+    color: #f2f2f2;
+  }
 }
 </style>
