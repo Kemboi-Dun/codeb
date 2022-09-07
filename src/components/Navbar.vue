@@ -76,7 +76,7 @@ export default {
   }
   .mini-navbar {
     color: #181818;
-
+    position: absolute;
     margin: auto;
     width: 100%;
     text-align: center;
