@@ -6,9 +6,16 @@ import Contact from '../components/Contact.vue';
     </script>
     
     <template>
-        <div class="about-page-wrapper">
+        <div class="contact-page-wrapper">
             <Navbar/>
             <Contact/>
             <Footer/>
         </div>
     </template>
+    <style scoped>
+        .contact-page-wrapper{
+          background:  var(--background-color-primary);
+          color: var(--text-primary-color);
+        }
+        
+        </style>

@@ -12,6 +12,23 @@ header {
   font-family: 'Poppins', sans-serif;
   
 }
+:root {
+  --background-color-primary: #181818;
+  --background-color-secondary: #f8f8f8;
+  --accent-color: #181818;
+  --text-primary-color: #f8f8f8;
+  --text-secondary-color: #181818;
+  --element-size: 4rem;
+}
+
+/* Define styles for the root window with dark - mode preference */
+:root.dark-theme {
+  --background-color-primary: #f8f8f8;
+  --background-color-secondary: #181818;
+  --accent-color: #f8f8f8;
+  --text-primary-color: #181818;
+  --text-secondary-color: #f8f8f8;
+}
 </style>
 
 

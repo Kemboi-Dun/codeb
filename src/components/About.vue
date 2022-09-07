@@ -42,6 +42,7 @@ const information = [
     flex-direction: column;
     width: 90%;
     justify-content: space-evenly;
+    color:var(--text-primary-color);
   }
   .title-wrapper {
     font-weight: lighter;
@@ -76,6 +77,7 @@ const information = [
     line-height: 30px;
   }
   .about-desc-btn button {
+    color: var(--text-primary-color);
     border: 1px solid #181818;
     border-radius: 6px;
     background: transparent;
@@ -87,8 +89,8 @@ const information = [
     cursor: pointer;
   }
   .about-desc-btn button:hover {
-    background: #181818;
-    color: #f2f2f2;
+    background:  var(--background-color-secondary);
+    color: var(--text-secondary-color);
   }
 }
 
@@ -96,6 +98,7 @@ const information = [
 
 @media only screen and (max-width: 2560px) and (min-width: 768px) {
   .about-body-wrapper {
+    color: var(--text-primary-color);
     margin: 4% auto;
     display: flex;
     width: 90%;
@@ -136,7 +139,8 @@ const information = [
     width: 800px;
   }
   .about-desc-btn button {
-    border: 1px solid #181818;
+    color: var(--text-primary-color);
+    border: 1px solid var(--text-primary-color);
     border-radius: 6px;
     background: transparent;
     font-size: 20px;
@@ -147,8 +151,8 @@ const information = [
     cursor: pointer;
   }
   .about-desc-btn button:hover {
-    background: #181818;
-    color: #f2f2f2;
+    background:  var(--background-color-secondary);
+    color: var(--text-secondary-color);
   }
 }
 </style>

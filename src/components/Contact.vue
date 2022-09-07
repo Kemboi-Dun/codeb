@@ -42,7 +42,7 @@
   .contact-title {
     font-size: 220%;
     font-weight: 700;
-    text-decoration: underline 6px solid #181818;
+    text-decoration: underline 6px solid var(--text-primary-color);
     text-underline-offset: 10px;
     margin: 0 5%;
   }
@@ -58,7 +58,7 @@
     margin: 4% 0;
     text-transform: capitalize;
     font-weight: 500;
-    text-decoration: underline 4px solid #181818;
+    text-decoration: underline 4px solid var(--text-primary-color);
   }
   .contact-card-item {
     font-weight: 400;
@@ -69,14 +69,14 @@
 
 @media only screen and (max-width: 2560px) and (min-width: 768px) {
   .contact-wrapper {
-    color: #181818;
+    color: var(--text-primary-color);
   }
 
   .contact-title {
     font-size: 100px;
     font-weight: 700;
     line-height: 180px;
-    text-decoration: underline 12px solid #181818;
+    text-decoration: underline 12px solid var(--text-primary-color);
     text-underline-offset: 10px;
     margin: 0 5%;
   }
@@ -95,7 +95,7 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
-    text-decoration: underline 4px solid #181818;
+    text-decoration: underline 4px solid var(--text-primary-color);
   }
   .contact-card-item {
     font-size: 24px;

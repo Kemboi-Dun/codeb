@@ -9,6 +9,7 @@
   .about-header-wrapper {
     margin: 0 5%;
     width: 90%;
+    color: var(--text-primary-color);
   }
   .about-header-info {
     font-weight: 700;
@@ -23,6 +24,7 @@
   .about-header-wrapper {
     margin: 0 5%;
     width: 900px;
+    color:var(--text-primary-color);
   }
   .about-header-info {
     font-weight: 800;

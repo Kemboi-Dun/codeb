@@ -17,6 +17,7 @@
   .header-wrapper {
     margin: 8% auto;
     width: 90%;
+    color: var(--text-primary-color);
   }
   .header-info {
     text-transform: capitalize;
@@ -38,7 +39,7 @@
 
 @media only screen and (max-width: 2560px) and (min-width: 768px) {
   .header-wrapper {
-    color: #000;
+    color: var(--text-primary-color);
     width: 60%;
     margin: 0 12%;
     text-transform: uppercase;

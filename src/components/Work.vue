@@ -38,7 +38,7 @@ const projects = [
   .work-title {
     font-size: 250%;
     font-weight: 700;
-    text-decoration: underline 6px solid #181818;
+    text-decoration: underline 6px solid var(--text-primary-color);
     text-underline-offset: 10px;
     margin: 0 5%;
   }
@@ -68,19 +68,21 @@ const projects = [
     margin: auto;
   }
   .work-info-btn button {
+    color:var(--text-primary-color);
     font-size: 20px;
     font-weight: 275;
     line-height: 30px;
-    border: 1px solid #181818;
+    border: 1px solid var(--text-primary-color);
     border-radius: 6px;
     background: transparent;
     text-transform: capitalize;
     padding: 4px 12px;
     cursor: pointer;
+    background: var(--background-color-primary);
   }
   .work-info-btn button:hover {
-    background: #181818;
-    color: #f6f6f6;
+    background: var(--background-color-primary);
+    color: var(--text-primary-color);
   }
 }
 
@@ -88,14 +90,15 @@ const projects = [
 
 @media only screen and (max-width: 2560px) and (min-width: 768px) {
   .work-body-wrapper {
-    color: #181818;
+    color: var(--text-primary-color);
     margin: auto;
   }
+ 
   .work-title {
     font-size: 120px;
     font-weight: 700;
     line-height: 180px;
-    text-decoration: underline 12px solid #181818;
+    text-decoration: underline 12px solid var(--text-primary-color);
     text-underline-offset: 10px;
     margin: 0 5%;
   }
@@ -127,10 +130,11 @@ const projects = [
     margin: auto;
   }
   .work-info-btn button {
+    color: var(--text-primary-color);
     font-size: 20px;
     font-weight: 275;
     line-height: 30px;
-    border: 1px solid #181818;
+    border: 1px solid var(--text-primary-color);
     border-radius: 6px;
     background: transparent;
     text-transform: capitalize;
@@ -138,8 +142,8 @@ const projects = [
     cursor: pointer;
   }
   .work-info-btn button:hover {
-    background: #181818;
-    color: #f6f6f6;
+    background:  var(--background-color-secondary);
+    color: var(--text-secondary-color);
   }
 }
 </style>

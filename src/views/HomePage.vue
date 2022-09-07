@@ -11,19 +11,23 @@ import Header from "../components/Header.vue";
 </script>
 
 <style scoped>
+
 @media only screen and (max-width: 768px) and (min-width: 320px) {
   .home-wrapper {
-    color: #141414;
+    color: var(--text-secondary-color);
     margin: auto;
     align-items: center;
     justify-content: center;
     width: 100%;
+    height:97vh;
+    background:  var(--background-color-primary);
+
   }
 }
 @media only screen and (max-width: 2560px) and (min-width: 768px) {
   .home-wrapper {
-    background: #f6f6f6;
-    color: #141414;
+    background:  var(--background-color-primary);
+    color: var(--text-secondary-color);
   }
 }
 </style>

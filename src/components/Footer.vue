@@ -13,7 +13,7 @@
 /* small screens */
 @media only screen and (max-width: 768px) and (min-width: 320px) {
   .footer-wrapper {
-    color: #181818;
+    color: var(--text-primary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,7 +32,7 @@
 
 @media only screen and (max-width: 2560px) and (min-width: 768px) {
   .footer-wrapper {
-    color: #181818;
+    color: var(--text-primary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;

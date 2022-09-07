@@ -1,17 +1,19 @@
 <script>
 import { RouterLink } from "vue-router";
+import Toogle from "./Toogle.vue";
 export default {
-  data() {
-    return {
-      showMenu: false,
-    };
-  },
-  methods: {
-    toggleNav: function () {
-      this.showMenu = !this.showMenu;
-      console.log(this.showMenu);
+    data() {
+        return {
+            showMenu: false,
+        };
     },
-  },
+    methods: {
+        toggleNav: function () {
+            this.showMenu = !this.showMenu;
+            console.log(this.showMenu);
+        },
+    },
+    components: { Toogle }
 };
 </script>
 <template>
@@ -30,14 +32,20 @@ export default {
 
         <div class="mini-navbar" v-show="showMenu">
           <div class="close-img" @click="toggleNav">
+            
             <img src="../assets/close.png" alt="" />
           </div>
+          
           <RouterLink to="/about" exact-active-class="active">About</RouterLink>
           <RouterLink to="/work" exact-active-class="active">Work</RouterLink>
 
           <RouterLink to="/contact" exact-active-class="active"
             >Contact</RouterLink
           >
+          <div class="toogle-cont">
+            <Toogle/>
+          </div>
+         
         </div>
 
         <!-- LARGE SCREENS NAVBAR -->
@@ -47,6 +55,7 @@ export default {
           <RouterLink to="/contact" exact-active-class="active"
             >Contact</RouterLink
           >
+          <Toogle/>
         </div>
       </nav>
     </div>
@@ -55,12 +64,16 @@ export default {
 
 <style scoped>
 @media only screen and (max-width: 768px) and (min-width: 320px) {
+  .toogle-cont{
+    margin:auto;
+  }
   nav {
     display: flex;
     flex-direction: column;
     width: 90%;
     margin: auto;
     position:relative;
+    color: var(--text-primary-color);
   }
   .close-img {
     display: flex;
@@ -76,12 +89,12 @@ export default {
     cursor: pointer;
   }
   .mini-navbar {
-    color: #181818;
+    color: var(--text-primary-color);
     position: fixed;
     margin:  auto;
     width: 100%;
     text-align: center;
-    /* background: rgba(255, 255, 255, 0.4); */
+    background: rgba(var(--background-color-primary), 0.7);
     backdrop-filter: blur(6px);
     display: grid;
     height: 100vh;
@@ -94,6 +107,7 @@ export default {
     display: none;
   }
   nav .nav-1 {
+    
     border-radius: 4px;
     align-items: center;
     padding: 4px;
@@ -118,13 +132,13 @@ export default {
     align-items: center;
   }
   a {
-    color: #181818;
+    color: var(--text-primary-color);
     text-decoration: none;
     margin: 0 4px;
     font-size: 28px;
   }
   .nav-1 a {
-    color: #181818;
+    color: var(--text-primary-color);
   }
   .nav-1 .router-link-active {
     text-decoration: none;
@@ -147,8 +161,8 @@ export default {
     font-size: 18px;
   }
   nav .router-link-active {
-    color: #181818;
-    text-decoration: underline 4px solid #181818;
+    color: var(--text-primary-color);
+    text-decoration: underline 4px solid var(--text-primary-color);
     text-underline-offset: 5px;
   }
 }
@@ -171,18 +185,18 @@ export default {
     align-items: center;
   }
   a {
-    color: #141414;
+    color: var(--text-primary-color);
     text-decoration: none;
     margin: 4% 4px;
   }
   .nav-1 a {
-    color: #141414;
+    color: var(--text-primary-color);
     font-weight: 700;
     font-size: 64px;
     line-height: 96px;
   }
   .nav-2 a {
-    border: 1px solid #141414;
+    border: 1px solid var(--background-color-secondary);
     border-radius: 6px;
     font-weight: 500;
     font-size: 32px;
@@ -208,8 +222,8 @@ export default {
   }
 
   nav .nav-2 .router-link-active {
-    color: #f2f2f2;
-    background: #161616;
+    color: var(--text-secondary-color);
+    background:  var(--background-color-secondary);
   }
 }
 </style>
