@@ -19,7 +19,6 @@ import Header from "../components/Header.vue";
     align-items: center;
     justify-content: center;
     width: 100%;
-    height:97vh;
     background:  var(--background-color-primary);
 
   }

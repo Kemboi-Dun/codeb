@@ -31,9 +31,11 @@ export default {
         <!-- SMALL SCREEN NAVBAR -->
 
         <div class="mini-navbar" v-show="showMenu">
-          <div class="close-img" @click="toggleNav">
-            
-            <img src="../assets/close.png" alt="" />
+          <div class="close-img" >
+           
+            <Toogle/>
+         
+            <img @click="toggleNav" src="../assets/close.png" alt="" />
           </div>
           
           <RouterLink to="/about" exact-active-class="active">About</RouterLink>
@@ -42,9 +44,7 @@ export default {
           <RouterLink to="/contact" exact-active-class="active"
             >Contact</RouterLink
           >
-          <div class="toogle-cont">
-            <Toogle/>
-          </div>
+
          
         </div>
 
@@ -64,9 +64,7 @@ export default {
 
 <style scoped>
 @media only screen and (max-width: 768px) and (min-width: 320px) {
-  .toogle-cont{
-    margin:auto;
-  }
+
   nav {
     display: flex;
     flex-direction: column;
@@ -77,7 +75,7 @@ export default {
   }
   .close-img {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-content: flex-end;
     height: 42px;
     margin: 0 12px;
