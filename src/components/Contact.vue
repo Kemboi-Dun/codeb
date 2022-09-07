@@ -46,6 +46,9 @@
     text-underline-offset: 10px;
     margin: 0 5%;
   }
+  .contact-wrapper{
+    display: grid;
+  }
   .contact-card-cont {
     display: flex;
     flex-wrap: wrap;

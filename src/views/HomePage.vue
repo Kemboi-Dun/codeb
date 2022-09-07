@@ -14,6 +14,7 @@ import Header from "../components/Header.vue";
 
 @media only screen and (max-width: 768px) and (min-width: 320px) {
   .home-wrapper {
+    display: grid;
     color: var(--text-secondary-color);
     margin: auto;
     align-items: center;

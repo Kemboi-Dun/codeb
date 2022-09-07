@@ -43,11 +43,13 @@
     width: 60%;
     margin: 0 12%;
     text-transform: uppercase;
+    
   }
   .header-info {
     font-weight: 700;
     font-size: 150px;
     line-height: 180px;
+    
   }
   .header-desc {
     text-transform: capitalize;

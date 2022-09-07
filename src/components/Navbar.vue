@@ -92,7 +92,7 @@ export default {
     margin:  auto;
     width: 100%;
     text-align: center;
-    background: rgba(var(--background-color-primary), 0.7);
+    background: var(--background-color-nav);
     backdrop-filter: blur(6px);
     display: grid;
     height: 100vh;
