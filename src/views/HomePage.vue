@@ -2,11 +2,11 @@
   <div class="home-wrapper">
     <NavbarVue />
     <Header />
-    <AboutHeader/>
-    <About/>
-    <Work/>
-    <Contact/>
-    <Footer/>
+    <AboutHeader />
+    <About />
+    <Work />
+    <Contact />
+    <Footer />
   </div>
 </template>
 
@@ -21,7 +21,6 @@ import Footer from "../components/Footer.vue";
 </script>
 
 <style scoped>
-
 @media only screen and (max-width: 768px) and (min-width: 320px) {
   .home-wrapper {
     display: grid;
@@ -30,13 +29,13 @@ import Footer from "../components/Footer.vue";
     align-items: center;
     justify-content: center;
     width: 100%;
-    background:  var(--background-color-primary);
+    background: var(--background-color-primary);
     overflow-y: hidden;
   }
 }
 @media only screen and (max-width: 2560px) and (min-width: 768px) {
   .home-wrapper {
-    background:  var(--background-color-primary);
+    background: var(--background-color-primary);
     color: var(--text-secondary-color);
   }
 }

@@ -1,19 +1,20 @@
 <script>
 import { RouterLink } from "vue-router";
 import Toogle from "./Toogle.vue";
+import Toogle1 from "./Toogle.vue";
 export default {
-    data() {
-        return {
-            showMenu: false,
-        };
+  data() {
+    return {
+      showMenu: false,
+    };
+  },
+  methods: {
+    toggleNav: function () {
+      this.showMenu = !this.showMenu;
+      console.log(this.showMenu);
     },
-    methods: {
-        toggleNav: function () {
-            this.showMenu = !this.showMenu;
-            console.log(this.showMenu);
-        },
-    },
-    components: { Toogle }
+  },
+  components: { Toogle, Toogle1 },
 };
 </script>
 <template>
@@ -28,26 +29,6 @@ export default {
             <img src="../assets/humbugger.png" alt="" />
           </div>
         </div>
-        <!-- SMALL SCREEN NAVBAR -->
-
-        <div class="mini-navbar" v-show="showMenu">
-          <div class="close-img" >
-           
-            <Toogle/>
-         
-            <img @click="toggleNav" src="../assets/close.png" alt="" />
-          </div>
-          
-          <RouterLink to="/about" exact-active-class="active">About</RouterLink>
-          <RouterLink to="/work" exact-active-class="active">Work</RouterLink>
-
-          <RouterLink to="/contact" exact-active-class="active"
-            >Contact</RouterLink
-          >
-
-         
-        </div>
-
         <!-- LARGE SCREENS NAVBAR -->
         <div class="nav-2">
           <RouterLink to="/about" exact-active-class="active">About</RouterLink>
@@ -56,24 +37,37 @@ export default {
             >Contact</RouterLink
           >
           <div class="toogle-icon">
-            <Toogle/>
+            <Toogle />
           </div>
-        
         </div>
       </nav>
+      <!-- SMALL SCREEN NAVBAR -->
+
+      <div class="mini-navbar" v-show="showMenu">
+        <div class="close-img">
+          <Toogle />
+          <img @click="toggleNav" src="../assets/close.png" alt="" />
+        </div>
+
+        <RouterLink to="/about" exact-active-class="active">About</RouterLink>
+        <RouterLink to="/work" exact-active-class="active">Work</RouterLink>
+
+        <RouterLink to="/contact" exact-active-class="active"
+          >Contact</RouterLink
+        >
+      </div>
     </div>
   </header>
 </template>
 
 <style scoped>
 @media only screen and (max-width: 768px) and (min-width: 320px) {
-
   nav {
     display: flex;
     flex-direction: column;
     width: 90%;
     margin: auto;
-    position:relative;
+    position: relative;
     color: var(--text-primary-color);
   }
   .close-img {
@@ -87,12 +81,12 @@ export default {
   .close-img img {
     height: 100%;
     margin: 0 6%;
-    cursor: pointer;
+    /* cursor: pointer; */
   }
   .mini-navbar {
     color: var(--text-primary-color);
     position: fixed;
-    margin:  auto;
+    margin: auto;
     width: 100%;
     text-align: center;
     background: var(--background-color-nav);
@@ -108,7 +102,6 @@ export default {
     display: none;
   }
   nav .nav-1 {
-    
     border-radius: 4px;
     align-items: center;
     padding: 4px;
@@ -169,11 +162,10 @@ export default {
 }
 
 @media only screen and (max-width: 2560px) and (min-width: 768px) {
-
-  .toogle-icon{
-    top:15%;
+  .toogle-icon {
+    top: 15%;
     /* background: lime; */
-    left:92%;
+    left: 92%;
     position: fixed;
   }
   .wrapper {
@@ -224,14 +216,14 @@ export default {
     max-width: 50%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     font-weight: 600;
     font-size: 18px;
   }
 
   nav .nav-2 .router-link-active {
     color: var(--text-secondary-color);
-    background:  var(--background-color-secondary);
+    background: var(--background-color-secondary);
   }
 }
 </style>

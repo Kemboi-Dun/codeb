@@ -24,7 +24,7 @@
   .about-header-wrapper {
     margin: 0 5%;
     width: 900px;
-    color:var(--text-primary-color);
+    color: var(--text-primary-color);
   }
   .about-header-info {
     font-weight: 800;

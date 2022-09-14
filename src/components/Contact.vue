@@ -39,6 +39,9 @@
 <style scoped>
 /* small screens */
 @media only screen and (max-width: 768px) and (min-width: 320px) {
+  .contact-wrapper {
+    color: var(--text-primary-color);
+  }
   .contact-title {
     font-size: 220%;
     font-weight: 700;
@@ -46,7 +49,7 @@
     text-underline-offset: 10px;
     margin: 0 5%;
   }
-  .contact-wrapper{
+  .contact-wrapper {
     display: grid;
   }
   .contact-card-cont {

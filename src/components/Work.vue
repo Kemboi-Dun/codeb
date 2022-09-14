@@ -35,6 +35,10 @@ const projects = [
 <style scoped>
 /* small screens */
 @media only screen and (max-width: 768px) and (min-width: 320px) {
+  .work-body-wrapper {
+    color: var(--text-primary-color);
+    margin: auto;
+  }
   .work-title {
     font-size: 250%;
     font-weight: 700;
@@ -68,7 +72,7 @@ const projects = [
     margin: auto;
   }
   .work-info-btn button {
-    color:var(--text-primary-color);
+    color: var(--text-primary-color);
     font-size: 20px;
     font-weight: 275;
     line-height: 30px;
@@ -93,7 +97,7 @@ const projects = [
     color: var(--text-primary-color);
     margin: auto;
   }
- 
+
   .work-title {
     font-size: 120px;
     font-weight: 700;
@@ -142,7 +146,7 @@ const projects = [
     cursor: pointer;
   }
   .work-info-btn button:hover {
-    background:  var(--background-color-secondary);
+    background: var(--background-color-secondary);
     color: var(--text-secondary-color);
   }
 }

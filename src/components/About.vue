@@ -42,7 +42,7 @@ const information = [
     flex-direction: column;
     width: 90%;
     justify-content: space-evenly;
-    color:var(--text-primary-color);
+    color: var(--text-primary-color);
   }
   .title-wrapper {
     font-weight: lighter;
@@ -89,7 +89,7 @@ const information = [
     cursor: pointer;
   }
   .about-desc-btn button:hover {
-    background:  var(--background-color-secondary);
+    background: var(--background-color-secondary);
     color: var(--text-secondary-color);
   }
 }
@@ -151,7 +151,7 @@ const information = [
     cursor: pointer;
   }
   .about-desc-btn button:hover {
-    background:  var(--background-color-secondary);
+    background: var(--background-color-secondary);
     color: var(--text-secondary-color);
   }
 }

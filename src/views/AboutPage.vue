@@ -14,9 +14,8 @@ import About from "../components/About.vue";
   </div>
 </template>
 <style scoped>
-.about-page-wrapper{
-  background:  var(--background-color-primary);
+.about-page-wrapper {
+  background: var(--background-color-primary);
   color: var(--text-primary-color);
 }
-
 </style>
