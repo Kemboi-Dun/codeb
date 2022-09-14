@@ -15,6 +15,7 @@
     font-weight: 700;
     font-size: 280%;
     margin: 0;
+    line-height: 48px;
   }
 }
 

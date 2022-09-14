@@ -74,7 +74,7 @@ const information = [
   .about-info-cont-desc {
     font-weight: 280;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 26px;
   }
   .about-desc-btn button {
     color: var(--text-primary-color);

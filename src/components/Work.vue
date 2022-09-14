@@ -65,7 +65,7 @@ const projects = [
   .work-info-desc {
     font-weight: 200;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 26px;
     display: grid;
     gap: 6px;
     width: 70%;
