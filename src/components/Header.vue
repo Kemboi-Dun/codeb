@@ -5,7 +5,12 @@
     </div>
     <div class="header-desc">
       <p>Kenyan based startup Tech Company.</p>
-      <img src="../assets/arrow.svg" alt="down-arrow" />
+      <div class="arrow">
+        <div class="arrowWrapper"></div>
+        <div class="arrowWrapper-arrow"></div>
+      </div>
+
+      <!-- <img src="../assets/arrow.svg" alt="down-arrow" /> -->
     </div>
   </div>
 </template>
@@ -14,6 +19,45 @@
 <style scoped>
 /* small screens */
 @media only screen and (max-width: 768px) and (min-width: 320px) {
+  .arrow {
+    width: 120px;
+    position: relative;
+    transform: rotate(-45deg);
+  }
+  .arrowWrapper:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 60px;
+    background: var(--background-color-secondary);
+    left: 59%;
+    transform: rotate(45deg);
+    top: 30%;
+  }
+  .arrowWrapper-arrow:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 60px;
+    background: var(--background-color-secondary);
+    right: 62%;
+    transform: rotate(135deg);
+    top: 30%;
+  }
+
+  .arrowWrapper:after {
+    content: "";
+    position: relative;
+    display: block;
+    width: 15px;
+    height: 60px;
+    background: var(--background-color-secondary);
+    z-index: 1;
+    margin: auto;
+    /* left: 40px; */
+  }
   .header-wrapper {
     margin: 8% auto;
     width: 90%;
@@ -39,6 +83,45 @@
 /* large screens */
 
 @media only screen and (max-width: 2560px) and (min-width: 768px) {
+  .arrow {
+    width: 200px;
+    position: relative;
+    transform: rotate(-45deg);
+  }
+  .arrowWrapper:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 100px;
+    background: var(--background-color-secondary);
+    left: 59%;
+    transform: rotate(45deg);
+    top: 30%;
+  }
+  .arrowWrapper-arrow:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 100px;
+    background: var(--background-color-secondary);
+    right: 60%;
+    transform: rotate(135deg);
+    top: 30%;
+  }
+
+  .arrowWrapper:after {
+    content: "";
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 130px;
+    background: var(--background-color-secondary);
+    z-index: 1;
+    margin: auto;
+    /* left: 40px; */
+  }
   .header-wrapper {
     color: var(--text-primary-color);
     width: 60%;

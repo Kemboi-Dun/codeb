@@ -84,6 +84,7 @@ export default {
     /* cursor: pointer; */
   }
   .mini-navbar {
+    z-index: 1;
     color: var(--text-primary-color);
     position: fixed;
     margin: auto;
